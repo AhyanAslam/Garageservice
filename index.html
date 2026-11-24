@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NexGen Garage LLC – Car Repair &amp; Service, Al Qusais Dubai</title>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;800&family=Saira+Condensed:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0d10;--bg2:#14161b;--line:#262932;--tx:#f2f2f2;--mut:#9aa0ab;--ac:#e8622c;--ac2:#ff8a4d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0d10}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:80px;height:100%}
+body{margin:0;background:#0c0d10;background:var(--bg);color:var(--tx);font-family:'Saira',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Saira Condensed','Saira',sans-serif;text-transform:uppercase;line-height:1.02;margin:0;letter-spacing:.01em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ac2);outline-offset:3px}
+.wrap{max-width:1180px;margin:auto;padding:0 22px}
+.btn{display:inline-block;background:var(--ac);color:#fff;font-weight:800;padding:14px 30px;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);border:0;cursor:pointer;font:800 15px 'Saira',sans-serif;letter-spacing:.04em;transition:background .2s,transform .2s}
+.btn:hover{background:var(--ac2);transform:translateY(-2px)}
+.btn.ghost{background:#2a2d36}.btn.ghost:hover{background:#3a3e4a}
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s}
+header.s{background:rgba(12,13,16,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font:800 28px 'Saira Condensed';letter-spacing:.03em;display:flex;align-items:center;gap:10px}
+.logo i{width:30px;height:30px;border:3px solid var(--ac);border-radius:50%;position:relative;display:block}
+.logo i::after{content:"";position:absolute;inset:6px;background:var(--ac);border-radius:50%}
+.logo b{color:var(--ac)}
+nav a{margin-left:28px;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#ddd}
+nav a:hover{color:var(--ac2)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:#07080a}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s;display:flex;align-items:center}
+.slide.on{opacity:1}
+.slide .bgv{position:absolute;inset:0;transform:scale(1.08);transition:transform 7s linear}
+.slide.on .bgv{transform:scale(1)}
+.s1 .bgv{background:radial-gradient(ellipse at 78% 45%,#3a2a24 0,transparent 45%),linear-gradient(120deg,#0a0b0d 30%,#1d2128)}
+.s2 .bgv{background:radial-gradient(ellipse at 75% 55%,#2b3340 0,transparent 50%),linear-gradient(120deg,#08090b 30%,#181b21)}
+.s3 .bgv{background:radial-gradient(ellipse at 80% 40%,#4a2316 0,transparent 48%),linear-gradient(120deg,#0a0a0c 30%,#1b1512)}
+.wheel{position:absolute;right:-6%;top:50%;width:min(62vw,680px);transform:translateY(-50%);opacity:.9}
+.slide.on .wheel{animation:spin 40s linear infinite}
+@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+.ghosttxt{position:absolute;left:4%;top:20%;font:800 clamp(80px,17vw,250px)/1 'Saira Condensed';color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.09);white-space:nowrap;pointer-events:none}
+.hc{position:relative;z-index:2;padding-top:90px}
+.hc h1{font-size:clamp(46px,8vw,104px);font-weight:800;max-width:900px;transform:translateY(30px);opacity:0;transition:all .9s .3s}
+.slide.on h1{transform:none;opacity:1}
+.hc p{max-width:520px;color:#c5c8cf;font-size:18px;margin:22px 0 34px;opacity:0;transition:opacity .9s .7s}
+.slide.on p{opacity:1}
+.hc .btns{display:flex;gap:14px;flex-wrap:wrap;opacity:0;transition:opacity .9s 1s}
+.slide.on .btns{opacity:1}
+.dots{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:5}
+.dots button{width:44px;height:5px;border:0;background:#444;cursor:pointer;padding:0}
+.dots button.on{background:var(--ac)}
+.scrollhint{position:absolute;right:26px;bottom:30px;z-index:5;font-size:12px;letter-spacing:.2em;color:var(--mut);writing-mode:vertical-rl}
+/* sections */
+section{padding:110px 0;position:relative}
+.sh{margin-bottom:54px;position:relative}
+.sh .gt{font:800 clamp(60px,12vw,150px)/.9 'Saira Condensed';color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.07);text-transform:uppercase;position:absolute;left:0;top:-34px;pointer-events:none;white-space:nowrap}
+.sh h2{font-size:clamp(36px,5.4vw,64px);position:relative;font-weight:800}
+.sh p{color:var(--mut);max-width:560px;margin:12px 0 0;position:relative}
+.bar{width:64px;height:5px;background:var(--ac);margin-top:16px;position:relative}
+.rv{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+.rv.l{transform:translateX(-60px)}.rv.r{transform:translateX(60px)}
+.rv.l.in,.rv.r.in{transform:none}
+/* services */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--bg2);border:1px solid var(--line);padding:30px 26px;position:relative;overflow:hidden;transition:transform .3s,border-color .3s}
+.card::before{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--ac);transition:width .4s}
+.card:hover{transform:translateY(-6px);border-color:#3a3e4a}.card:hover::before{width:100%}
+.card svg{width:46px;height:46px;stroke:var(--ac);fill:none;stroke-width:1.8;margin-bottom:18px}
+.card h3{font-size:28px;margin-bottom:8px}
+.card p{color:var(--mut);font-size:15px;margin:0 0 20px}
+.card .row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:16px}
+.price{font:800 24px 'Saira Condensed';color:var(--ac2)}
+.price small{font:400 12px 'Saira';color:var(--mut);margin-right:4px}
+.pick{background:none;border:1px solid var(--ac);color:var(--ac2);padding:8px 16px;font:600 13px 'Saira';cursor:pointer;text-transform:uppercase;letter-spacing:.06em;transition:background .2s}
+.pick:hover{background:var(--ac);color:#fff}
+/* why */
+.why{background:var(--bg2)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.list{list-style:none;padding:0;margin:26px 0 0}
+.list li{padding:16px 0 16px 46px;border-bottom:1px solid var(--line);position:relative}
+.list li::before{content:"✓";position:absolute;left:0;top:14px;width:30px;height:30px;background:var(--ac);display:grid;place-items:center;font-weight:800;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+.list b{display:block;font:800 21px 'Saira Condensed';text-transform:uppercase}
+.list span{color:var(--mut);font-size:15px}
+.rate{border:1px solid var(--line);padding:50px 30px;text-align:center;background:var(--bg);position:relative}
+.rate b{font:800 120px/1 'Saira Condensed';color:var(--ac)}
+.stars{color:var(--ac2);font-size:30px;letter-spacing:6px}
+.rate p{color:var(--mut);margin:8px 0 0}
+/* reviews */
+.rev{position:relative;overflow:hidden}
+.track{display:flex;transition:transform .7s cubic-bezier(.7,0,.2,1)}
+.rc{min-width:100%;padding:6px}
+.rc div{background:var(--bg2);border:1px solid var(--line);border-left:5px solid var(--ac);padding:34px;font-size:19px}
+.rc em{display:block;margin-top:18px;font-style:normal;color:var(--ac2);font-weight:600}
+.rnav{display:flex;gap:10px;margin-top:20px}
+.rnav button{width:48px;height:48px;background:#2a2d36;border:0;color:#fff;font-size:20px;cursor:pointer}
+.rnav button:hover{background:var(--ac)}
+/* booking */
+.book{background:linear-gradient(180deg,var(--bg),#120d0a)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:var(--bg2);border:1px solid var(--line);padding:34px}
+label{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:6px}
+input,select,textarea{width:100%;background:#0c0d10;border:1px solid var(--line);color:#fff;padding:13px 14px;font:400 16px 'Saira',sans-serif;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--ac);border-color:var(--ac)}
+.full{grid-column:1/-1}
+.sum{font:800 26px 'Saira Condensed';text-transform:uppercase}
+.ok{display:none;background:#14281a;border:1px solid #2e7d46;padding:20px;margin-top:16px}
+.ok.show{display:block;animation:pop .5s}
+@keyframes pop{from{transform:scale(.96);opacity:0}}
+.info{display:flex;flex-direction:column;gap:22px}
+.info div{border-left:4px solid var(--ac);padding-left:18px}
+.info b{display:block;font:800 22px 'Saira Condensed';text-transform:uppercase}
+.info span{color:var(--mut)}
+footer{background:#07080a;padding:36px 0;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:28px;box-shadow:0 6px 20px rgba(0,0,0,.5);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr;gap:40px}
+nav{position:fixed;inset:72px 0 auto 0;background:#0c0d10;padding:10px 22px 20px;display:none;flex-direction:column;border-bottom:1px solid var(--line)}
+nav.open{display:flex}nav a{margin:0;padding:14px 0;border-bottom:1px solid var(--line)}.burger{display:block}
+.scrollhint{display:none}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}form{grid-template-columns:1fr;padding:22px}section{padding:80px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+/* ---- style upgrade + hover effects ---- */
+body{background-image:radial-gradient(circle at 12% 8%,rgba(232,98,44,.10),transparent 38%),radial-gradient(circle at 92% 55%,rgba(232,98,44,.07),transparent 40%),linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:auto,auto,56px 56px,56px 56px;background-attachment:fixed}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:140px;background:linear-gradient(transparent,#0c0d10);z-index:3;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:repeating-linear-gradient(115deg,transparent 0 46px,rgba(232,98,44,.045) 46px 48px);pointer-events:none}
+.hc h1{text-shadow:0 8px 40px rgba(0,0,0,.6)}
+.sh h2::after{content:"";display:block}
+.bar{transition:width .5s}.sh:hover .bar{width:140px}
+.sh h2{background:linear-gradient(90deg,#fff 60%,#ff9a66);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sh:hover .gt{-webkit-text-stroke-color:rgba(232,98,44,.35);transition:-webkit-text-stroke-color .5s}
+/* header + nav */
+.logo{transition:transform .3s,filter .3s}.logo:hover{transform:scale(1.05);filter:drop-shadow(0 0 12px rgba(232,98,44,.7))}
+.logo i{transition:transform .8s}.logo:hover i{transform:rotate(360deg)}
+nav a{position:relative;transition:color .25s}
+nav a::after{content:"";position:absolute;left:0;bottom:-6px;height:3px;width:0;background:var(--ac);transition:width .3s}
+nav a:hover::after{width:100%}
+/* buttons */
+.btn{position:relative;overflow:hidden;box-shadow:0 10px 30px -10px rgba(232,98,44,.7)}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn:hover::after{left:130%}
+.btn:hover{box-shadow:0 16px 36px -8px rgba(232,98,44,.9);transform:translateY(-3px) scale(1.03)}
+.btn:active{transform:scale(.97)}
+.dots button{transition:background .3s,width .3s,height .3s}.dots button:hover{background:var(--ac2);height:8px}.dots button.on{width:70px}
+/* cards */
+.card{--mx:50%;--my:50%;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(232,98,44,.20),transparent 70%),var(--bg2);clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);transition:transform .35s,border-color .35s,box-shadow .35s}
+.card:hover{box-shadow:0 22px 50px -18px rgba(232,98,44,.55);border-color:var(--ac)}
+.card svg{transition:transform .5s,stroke .3s,filter .3s}
+.card:hover svg{transform:rotate(-8deg) scale(1.2);stroke:var(--ac2);filter:drop-shadow(0 0 8px rgba(232,98,44,.8))}
+.card h3{transition:color .3s,letter-spacing .3s}.card:hover h3{color:var(--ac2);letter-spacing:.04em}
+.price{transition:transform .3s}.card:hover .price{transform:scale(1.12);transform-origin:left}
+.pick{position:relative;overflow:hidden;z-index:0;transition:color .3s,transform .3s,box-shadow .3s}
+.pick:hover{transform:translateY(-2px);box-shadow:0 8px 20px -6px rgba(232,98,44,.8)}
+/* why us */
+.list li{transition:transform .3s,background .3s,padding .3s;cursor:default}
+.list li:hover{transform:translateX(12px);background:linear-gradient(90deg,rgba(232,98,44,.14),transparent)}
+.list li::before{transition:transform .4s,background .3s}.list li:hover::before{transform:rotate(360deg) scale(1.15);background:var(--ac2)}
+.list li b{transition:color .3s}.list li:hover b{color:var(--ac2)}
+.rate{transition:transform .3s ease,box-shadow .4s,border-color .4s;transform-style:preserve-3d;background:radial-gradient(circle at 50% 0,rgba(232,98,44,.18),transparent 65%),var(--bg)}
+.rate:hover{border-color:var(--ac);box-shadow:0 0 0 1px var(--ac),0 30px 70px -20px rgba(232,98,44,.55)}
+.rate b{display:inline-block;transition:transform .4s,text-shadow .4s}.rate:hover b{transform:scale(1.1);text-shadow:0 0 40px rgba(232,98,44,.8)}
+.stars{transition:letter-spacing .4s}.rate:hover .stars{letter-spacing:12px}
+/* reviews */
+.rc div{transition:background .3s,border-color .3s,transform .3s}
+.rc div:hover{background:#1a1d24;border-left-color:var(--ac2);transform:translateX(6px)}
+.rnav button{transition:background .25s,transform .25s,box-shadow .25s;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.rnav button:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 8px 20px -6px rgba(232,98,44,.8)}
+/* booking */
+form{transition:border-color .4s,box-shadow .4s}form:hover{border-color:#3a3e4a;box-shadow:0 30px 70px -30px rgba(232,98,44,.35)}
+input,select,textarea{transition:border-color .25s,box-shadow .25s,background .25s}
+input:hover,select:hover,textarea:hover{border-color:#555b6a;background:#101216}
+input:focus,select:focus{box-shadow:0 0 0 4px rgba(232,98,44,.2)}
+label{transition:color .25s}div:hover>label{color:var(--ac2)}
+.info div{transition:transform .3s,border-color .3s,background .3s;padding:14px 18px;background:linear-gradient(90deg,rgba(232,98,44,0),rgba(232,98,44,0))}
+.info div:hover{transform:translateX(10px);border-color:var(--ac2);background:linear-gradient(90deg,rgba(232,98,44,.14),transparent)}
+.info b{transition:color .3s}.info div:hover b{color:var(--ac2)}
+footer span{transition:color .25s}footer span:hover{color:var(--ac2)}
+.wa{transition:transform .3s,filter .3s}.wa:hover{transform:scale(1.15) rotate(-8deg);filter:brightness(1.1)}
+::selection{background:var(--ac);color:#fff}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#0c0d10}::-webkit-scrollbar-thumb{background:#333a46}::-webkit-scrollbar-thumb:hover{background:var(--ac)}
+@media(hover:none){.card:hover,.list li:hover,.info div:hover{transform:none}}
+.slide .bgv.p1{background-image:url(images/car1.jpg)}
+.slide .bgv.p2{background-image:url(images/car2.jpg)}
+.slide .bgv.p3{background-image:url(images/car3.jpg)}
+.slide .bgv.p4{background-image:url(images/car4.jpg)}
+.slide .bgv.p5{background-image:url(images/car5.jpg)}
+.slide .bgv.p6{background-image:url(images/car6.jpg)}
+.slide .bgv.p7{background-image:url(images/car7.jpg)}
+.slide .bgv.p8{background-image:url(images/car8.jpg)}
+.slide .bgv.p9{background-image:url(images/car9.jpg)}
+
+.slide .bgv{inset:0 auto 0 0;width:130%;background-size:cover;background-position:left center;background-repeat:no-repeat}
+.slide .ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,8,10,.94) 0%,rgba(7,8,10,.72) 34%,rgba(7,8,10,.12) 68%,transparent),linear-gradient(0deg,rgba(7,8,10,.65),transparent 35%)}
+.dots{gap:8px}.dots button{width:26px}.dots button.on{width:52px}
+@media(max-width:900px){.slide .bgv{width:100%;background-position:55% center}.slide .ov{background:linear-gradient(0deg,rgba(7,8,10,.95) 0%,rgba(7,8,10,.7) 45%,rgba(7,8,10,.35))}.dots button{width:18px}.dots button.on{width:34px}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a href="#top" class="logo"><i></i>NEXGEN <b>GARAGE</b></a>
+<button class="burger" id="bg" aria-label="Menu">☰</button>
+<nav id="nv"><a href="#services">Services</a><a href="#why">Why us</a><a href="#reviews">Reviews</a><a href="#book">Book now</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<div class="hero" id="top">
+<div class="slide on"><div class="bgv p1"></div><div class="ov"></div><div class="ghosttxt">NEXGEN</div><div class="wrap hc"><h1>Expert car repair in Al Qusais</h1><p>Honest diagnostics, fair prices and fast turnaround. Check our services and book your slot online in under a minute.</p><div class="btns"><a class="btn" href="#book">Book a service</a><a class="btn ghost" href="#services">View prices</a></div></div></div>
+<div class="slide"><div class="bgv p2"></div><div class="ov"></div><div class="ghosttxt">SERVICE</div><div class="wrap hc"><h1>Full service, done right the first time</h1><p>Oil change, brakes, AC, engine and suspension. Every job comes with a clear quote before we start.</p><div class="btns"><a class="btn" href="#services">Our services</a></div></div></div>
+<div class="slide"><div class="bgv p3"></div><div class="ov"></div><div class="ghosttxt">4.9★</div><div class="wrap hc"><h1>Rated 4.9 stars by 43 drivers</h1><p>Your neighbours trust NexGen Garage with their cars. Come see why.</p><div class="btns"><a class="btn" href="#reviews">Read reviews</a><a class="btn ghost" href="#book">Book now</a></div></div></div>
+<div class="slide"><div class="bgv p4"></div><div class="ov"></div><div class="ghosttxt">NEXGEN</div><div class="wrap hc"><h1>Expert car repair in Al Qusais</h1><p>Honest diagnostics, fair prices and fast turnaround. Check our services and book your slot online in under a minute.</p><div class="btns"><a class="btn" href="#book">Book a service</a><a class="btn ghost" href="#services">View prices</a></div></div></div>
+<div class="slide"><div class="bgv p5"></div><div class="ov"></div><div class="ghosttxt">SERVICE</div><div class="wrap hc"><h1>Full service, done right the first time</h1><p>Oil change, brakes, AC, engine and suspension. Every job comes with a clear quote before we start.</p><div class="btns"><a class="btn" href="#services">Our services</a></div></div></div>
+<div class="slide"><div class="bgv p6"></div><div class="ov"></div><div class="ghosttxt">4.9★</div><div class="wrap hc"><h1>Rated 4.9 stars by 43 drivers</h1><p>Your neighbours trust NexGen Garage with their cars. Come see why.</p><div class="btns"><a class="btn" href="#reviews">Read reviews</a><a class="btn ghost" href="#book">Book now</a></div></div></div>
+<div class="slide"><div class="bgv p7"></div><div class="ov"></div><div class="ghosttxt">NEXGEN</div><div class="wrap hc"><h1>Expert car repair in Al Qusais</h1><p>Honest diagnostics, fair prices and fast turnaround. Check our services and book your slot online in under a minute.</p><div class="btns"><a class="btn" href="#book">Book a service</a><a class="btn ghost" href="#services">View prices</a></div></div></div>
+<div class="slide"><div class="bgv p8"></div><div class="ov"></div><div class="ghosttxt">SERVICE</div><div class="wrap hc"><h1>Full service, done right the first time</h1><p>Oil change, brakes, AC, engine and suspension. Every job comes with a clear quote before we start.</p><div class="btns"><a class="btn" href="#services">Our services</a></div></div></div>
+<div class="slide"><div class="bgv p9"></div><div class="ov"></div><div class="ghosttxt">4.9★</div><div class="wrap hc"><h1>Rated 4.9 stars by 43 drivers</h1><p>Your neighbours trust NexGen Garage with their cars. Come see why.</p><div class="btns"><a class="btn" href="#reviews">Read reviews</a><a class="btn ghost" href="#book">Book now</a></div></div></div>
+<div class="dots" id="dots"><button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button><button aria-label="Slide 4"></button><button aria-label="Slide 5"></button><button aria-label="Slide 6"></button><button aria-label="Slide 7"></button><button aria-label="Slide 8"></button><button aria-label="Slide 9"></button></div>
+<div class="scrollhint">SCROLL DOWN</div>
+</div>
+
+<section id="services"><div class="wrap">
+<div class="sh rv"><div class="gt">Services</div><h2>What we fix</h2><div class="bar"></div><p>Sample prices in AED. Final quote is confirmed after inspection.</p></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap split">
+<div class="rv l"><div class="sh" style="margin-bottom:0"><div class="gt">Why us</div><h2>Your car in trusted hands</h2><div class="bar"></div></div>
+<ul class="list">
+<li><b>Clear pricing</b><span>You see the cost before any work begins.</span></li>
+<li><b>Skilled technicians</b><span>Experienced with Japanese, German, American and Korean cars.</span></li>
+<li><b>Easy online booking</b><span>Pick a service, date and time. We confirm on WhatsApp.</span></li>
+<li><b>Convenient location</b><span>Right in Al Qusais, Dubai.</span></li></ul></div>
+<div class="rate rv r"><b>4.9</b><div class="stars">★★★★★</div><p>Average from 43 Google reviews</p></div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+<div class="sh rv"><div class="gt">Reviews</div><h2>Drivers say</h2><div class="bar"></div><p>Sample reviews for this demo.</p></div>
+<div class="rev rv"><div class="track" id="tr">
+<div class="rc"><div>Quick, honest and fairly priced. They explained exactly what my car needed and nothing more.<em>Customer · Al Qusais</em></div></div>
+<div class="rc"><div>Booked the AC service in the morning and had my car back by evening. Cold air again!<em>Customer · Dubai</em></div></div>
+<div class="rc"><div>Best garage in the area. Friendly team, clean workshop and great communication.<em>Customer · Al Nahda</em></div></div>
+</div><div class="rnav"><button id="pv" aria-label="Previous">←</button><button id="nx" aria-label="Next">→</button></div></div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+<div class="sh rv"><div class="gt">Booking</div><h2>Book your slot</h2><div class="bar"></div><p>Choose a service and time. We will confirm on WhatsApp.</p></div>
+<div class="split" style="align-items:start">
+<form id="f" class="rv l">
+<div class="full"><label for="sv">Service</label><select id="sv" required></select></div>
+<div><label for="nm">Your name</label><input id="nm" required autocomplete="name"></div>
+<div><label for="ph">Phone</label><input id="ph" type="tel" required autocomplete="tel" placeholder="+971 5X XXX XXXX"></div>
+<div><label for="dt">Date</label><input id="dt" type="date" required></div>
+<div><label for="tm">Time</label><select id="tm"><option>9:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>3:00 PM</option><option>5:00 PM</option></select></div>
+<div class="full"><label for="car">Car make &amp; model</label><input id="car" placeholder="e.g. Toyota Camry 2018"></div>
+<div class="full"><div class="sum" id="sm">Estimated from AED 0</div></div>
+<div class="full"><button class="btn" type="submit">Confirm booking</button></div>
+<div class="full ok" id="ok" role="status"></div>
+</form>
+<div class="info rv r" id="contact">
+<div><b>Address</b><span>NexGen Garage LLC, Al Qusais, Dubai, UAE</span></div>
+<div><b>Hours</b><span>Sat – Thu, 8:00 AM – 8:00 PM (sample)</span></div>
+<div><b>Phone / WhatsApp</b><span>+971 50 000 0000 (sample)</span></div>
+</div></div>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 NexGen Garage LLC. All rights reserved.</span><span>Demo website by Cloudiqo</span></div></footer>
+<a class="wa" href="https://wa.me/971500000000" aria-label="WhatsApp">✆</a>
+
+<script>
+var S=[["Oil change","Engine oil and filter replacement with a quick safety check.",89,"M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"],
+["Brake service","Pads, discs and brake fluid inspected and replaced.",149,"M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"],
+["AC repair","Gas refill, leak check and cooling performance test.",129,"M12 2v20M4 7l16 10M4 17L20 7"],
+["Engine diagnostics","Computer scan to find warning lights and faults fast.",99,"M3 10h3l2-3h6l2 3h5v7H3zM7 17v2M17 17v2"],
+["Battery replacement","Battery test and fitting on the spot.",199,"M3 8h16v10H3zM19 11h2v4h-2zM7 12h4M9 10v4"],
+["Suspension &amp; steering","Shocks, bushes and alignment for a smooth ride.",179,"M12 2c4 0 4 3 0 3s-4 3 0 3 4 3 0 3-4 3 0 3 4 3 0 3"],
+["Tyres &amp; alignment","Tyre fitting, balancing and wheel alignment.",119,"M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"],
+["Transmission service","Fluid change and gearbox health check.",249,"M6 4v16M12 4v16M18 4v16M6 12h12"],
+["Full car inspection","Complete multi-point check before long trips or buying.",159,"M4 4h16v16H4zM8 12l3 3 5-6"]];
+var g=document.getElementById('grid'),sv=document.getElementById('sv');
+S.forEach(function(s,i){
+g.insertAdjacentHTML('beforeend','<div class="card rv" style="transition-delay:'+(i%3)*.12+'s"><svg viewBox="0 0 24 24"><path d="'+s[3]+'"/></svg><h3>'+s[0]+'</h3><p>'+s[1]+'</p><div class="row"><div class="price"><small>from AED</small>'+s[2]+'</div><button class="pick" data-i="'+i+'">Book</button></div></div>');
+sv.insertAdjacentHTML('beforeend','<option value="'+i+'">'+s[0].replace(/&amp;/g,'&')+' – from AED '+s[2]+'</option>')});
+function sum(){document.getElementById('sm').textContent='Estimated from AED '+S[sv.value][2]}
+sv.onchange=sum;sum();
+g.onclick=function(e){var b=e.target.closest('.pick');if(!b)return;sv.value=b.dataset.i;sum();document.getElementById('book').scrollIntoView()};
+var d=document.getElementById('dt');var t=new Date();d.min=t.toISOString().slice(0,10);
+document.getElementById('f').onsubmit=function(e){e.preventDefault();
+var n=S[sv.value][0].replace(/&amp;/g,'&'),m='Hello NexGen Garage, I would like to book: '+n+' on '+d.value+' at '+document.getElementById('tm').value+'. Name: '+document.getElementById('nm').value+', Car: '+document.getElementById('car').value+', Phone: '+document.getElementById('ph').value;
+var o=document.getElementById('ok');o.innerHTML='<b>Booking request ready.</b> '+n+' on '+d.value+'. <a href="https://wa.me/971500000000?text='+encodeURIComponent(m)+'" style="color:#7be39b;text-decoration:underline">Send it on WhatsApp to confirm</a>';o.className='full ok show'};
+/* hero slideshow */
+var sl=document.querySelectorAll('.slide'),ds=document.querySelectorAll('#dots button'),c=0,iv;
+function go(n){sl[c].classList.remove('on');ds[c].classList.remove('on');c=n%sl.length;sl[c].classList.add('on');ds[c].classList.add('on')}
+function auto(){clearInterval(iv);iv=setInterval(function(){go(c+1)},6500)}
+ds.forEach(function(b,i){b.onclick=function(){go(i);auto()}});auto();
+/* header */
+var hd=document.getElementById('hd');addEventListener('scroll',function(){hd.classList.toggle('s',scrollY>40)});
+var nv=document.getElementById('nv');document.getElementById('bg').onclick=function(){nv.classList.toggle('open')};
+nv.onclick=function(){nv.classList.remove('open')};
+/* reveal + counters */
+function count(el){var n=parseFloat(el.dataset.n),dd=+el.dataset.d||0,s=el.dataset.s||'',st=null;
+function f(ts){st=st||ts;var p=Math.min((ts-st)/1400,1);el.textContent=(n*p).toFixed(dd)+s;if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');var b=e.target.querySelector('[data-n]');if(b)count(b);io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+/* reviews slider */
+var tr=document.getElementById('tr'),r=0;
+function rs(n){r=(n+3)%3;tr.style.transform='translateX(-'+r*100+'%)'}
+document.getElementById('nx').onclick=function(){rs(r+1)};document.getElementById('pv').onclick=function(){rs(r-1)};
+setInterval(function(){rs(r+1)},7000);
+
+/* cursor spotlight on cards + 3D tilt on rating box */
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+var rt=document.querySelector('.rate');
+if(rt&&matchMedia('(hover:hover)').matches){rt.addEventListener('mousemove',function(e){var r=rt.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;rt.style.transform='perspective(700px) rotateY('+x*14+'deg) rotateX('+-y*14+'deg)'});rt.addEventListener('mouseleave',function(){rt.style.transform=''})}
+</script>
+</body>
+</html>
